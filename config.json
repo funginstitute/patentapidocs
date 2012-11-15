@@ -1,0 +1,7 @@
+{
+    "title" : "PatentSnapper USPTO API",
+    "address": "0.0.0.0",
+    "port" : 4000,
+    "debug" : false,
+    "sessionSecret" : "12345"
+}
