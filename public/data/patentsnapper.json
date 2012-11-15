@@ -1,0 +1,115 @@
+{
+  "endpoints": [
+  {
+      "path": "/patents/1337",
+      "name": "Patents",
+      "methods": [
+          {
+              "MethodName": "Default",
+              "parameters": [
+                  {
+                      "Default": "json",
+                      "Required": "Y",
+                      "Type": "string",
+                      "Name": "format",
+                      "Description": "output format"
+                  }
+              ],
+              "RequiresOAuth": "Y",
+              "URI": "/companies/1337",
+              "HTTPMethod": "GET",
+              "Synopsis": "Get the default representation for companies"
+          }
+      ]
+    },
+    {
+        "path": "/inventors/1337",
+        "name": "Inventors",
+        "methods": [
+            {
+                "MethodName": "Default",
+                "parameters": [
+                    {
+                        "Default": "json",
+                        "Required": "Y",
+                        "Type": "string",
+                        "Name": "format",
+                        "Description": "output format"
+                    }
+                ],
+                "RequiresOAuth": "Y",
+                "URI": "/companies/1337",
+                "HTTPMethod": "GET",
+                "Synopsis": "Get the default representation for companies"
+            }
+        ]
+      },
+      {
+        "path": "/patents/1337",
+        "name": "Lawyers",
+        "methods": [
+            {
+                "MethodName": "Default",
+                "parameters": [
+                    {
+                        "Default": "json",
+                        "Required": "Y",
+                        "Type": "string",
+                        "Name": "format",
+                        "Description": "output format"
+                    }
+                ],
+                "RequiresOAuth": "Y",
+                "URI": "/companies/1337",
+                "HTTPMethod": "GET",
+                "Synopsis": "Get the default representation for companies"
+            }
+        ]
+      },
+      {
+        "path": "/patents/1337",
+        "name": "Patent Classes",
+        "methods": [
+            {
+                "MethodName": "Default",
+                "parameters": [
+                    {
+                        "Default": "json",
+                        "Required": "Y",
+                        "Type": "string",
+                        "Name": "format",
+                        "Description": "output format"
+                    }
+                ],
+                "RequiresOAuth": "Y",
+                "URI": "/companies/1337",
+                "HTTPMethod": "GET",
+                "Synopsis": "Get the default representation for companies"
+            }
+        ]
+      },     
+      {
+        "path": "/patents/1337",
+        "name": "Assignee",
+        "methods": [
+            {
+                "MethodName": "Default",
+                "parameters": [
+                    {
+                        "Default": "json",
+                        "Required": "Y",
+                        "Type": "string",
+                        "Name": "format",
+                        "Description": "output format"
+                    }
+                ],
+                "RequiresOAuth": "Y",
+                "URI": "/companies/1337",
+                "HTTPMethod": "GET",
+                "Synopsis": "Get the default representation for companies"
+            }
+        ]
+      } 
+  ]
+}
+
