@@ -75,7 +75,7 @@
         "name": "Invpats",
         "methods": [
             {
-                "MethodName": "Default",
+                "MethodName": "Search",
                 "parameters": [
                     {
                         "Required": "N",
@@ -212,88 +212,247 @@
         ]
       },
       {
-        "path": "/inventors/1337",
+        "path": "/inventors",
         "name": "Inventors",
         "methods": [
             {
-                "MethodName": "Default",
+                "MethodName": "Search",
                 "parameters": [
-                    {
-                        "Default": "json",
-                        "Required": "Y",
-                        "Type": "string",
-                        "Name": "format",
-                        "Description": "output format"
-                    }
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "patent",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "firstname",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "lastname",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "street",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "city",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "state",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "country",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "zipcode",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "code",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "nationality",
+                    "Description": "output format"
+                },
+                {
+                    "Required": "N",
+                    "Type": "string",
+                    "Name": "invseq",
+                    "Description": "output format"
+                }          
                 ],
                 "RequiresOAuth": "Y",
-                "URI": "/companies/1337",
+                "URI": "/inventors",
                 "HTTPMethod": "GET",
                 "Synopsis": "Get the default representation for companies"
             }
         ]
       },  
       {
-        "path": "/citations/1337",
+        "path": "/citations",
         "name": "Citations",
         "methods": [
             {
-                "MethodName": "Default",
+                "MethodName": "Search",
                 "parameters": [
                     {
-                        "Default": "json",
-                        "Required": "Y",
+                        "Required": "N",
                         "Type": "string",
-                        "Name": "format",
+                        "Name": "patent",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "cit_date",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "cit_name",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "cit_kind",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "cit_country",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "citation",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "category",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "citseq",
                         "Description": "output format"
                     }
+                    
                 ],
                 "RequiresOAuth": "Y",
-                "URI": "/companies/1337",
+                "URI": "/citations",
                 "HTTPMethod": "GET",
                 "Synopsis": "Get the default representation for companies"
             }
         ]
       },     
       {
-        "path": "/patents/1337",
+        "path": "/patents",
         "name": "Patents",
         "methods": [
             {
-                "MethodName": "Default",
+                "MethodName": "Search",
                 "parameters": [
                     {
-                        "Default": "json",
-                        "Required": "Y",
+                        "Required": "N",
                         "Type": "string",
-                        "Name": "format",
+                        "Name": "patent",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "kind",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "claims",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "apptype",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "appnum",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "gdate",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "gyear",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "appdate",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "appyear",
                         "Description": "output format"
                     }
                 ],
                 "RequiresOAuth": "Y",
-                "URI": "/companies/1337",
+                "URI": "/patents",
                 "HTTPMethod": "GET",
                 "Synopsis": "Get the default representation for companies"
             }
         ]
       },
       {
-          "path": "/patent_descs/1337",
+          "path": "/patent_descs",
           "name": "Patent Descriptions",
           "methods": [
               {
-                  "MethodName": "Default",
+                  "MethodName": "Search",
                   "parameters": [
-                      {
-                          "Default": "json",
-                          "Required": "Y",
-                          "Type": "string",
-                          "Name": "format",
-                          "Description": "output format"
-                      }
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "patent",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "title",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "abstract",
+                      "Description": "output format"
+                  }
                   ],
                   "RequiresOAuth": "N",
-                  "URI": "/companies/1337",
+                  "URI": "/patent_descs",
                   "HTTPMethod": "GET",
                   "Synopsis": "Get the default representation for companies"
               }
