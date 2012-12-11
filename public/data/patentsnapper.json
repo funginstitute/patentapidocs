@@ -30,7 +30,38 @@
                       "Type": "string",
                       "Name": "city",
                       "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "state",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "country",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "nationality",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "asgseq",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "residence",
+                      "Description": "output format"
                   }
+                  
               ],
               "RequiresOAuth": "N",
               "URI": "/assignees",
@@ -40,22 +71,141 @@
       ]
     },
     {
-        "path": "/invpats/1337",
+        "path": "/invpats",
         "name": "Invpats",
         "methods": [
             {
                 "MethodName": "Default",
                 "parameters": [
                     {
-                        "Default": "json",
-                        "Required": "Y",
+                        "Required": "N",
                         "Type": "string",
-                        "Name": "format",
+                        "Name": "firstname",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "lastname",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "street",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "city",
+                        "Description": "output format"
+                    },{
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "state",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "country",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "zipcode",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "lat",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "lon",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "invseq",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "patent",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "gyear",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "appyearstr",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "appdatestr",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "assignee",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "asgnum",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "patentclass",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "coauthor",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "invnum",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "lower",
+                        "Description": "output format"
+                    },
+                    {
+                        "Required": "N",
+                        "Type": "string",
+                        "Name": "upper",
                         "Description": "output format"
                     }
+                    
                 ],
                 "RequiresOAuth": "Y",
-                "URI": "/companies/1337",
+                "URI": "/invpats",
                 "HTTPMethod": "GET",
                 "Synopsis": "Get the default representation for companies"
             }
