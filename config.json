@@ -1,11 +1,11 @@
 {
     "title" : "PatentSnapper USPTO API",
     "address": "0.0.0.0",
-    "port" : 4000,
+    "port" : 8080,
     "debug" : false,
     "sessionSecret" : "12345",
     "redis" : {
-                "host" : "redistogo:41b2b6b17e4e54754b0a1b3c65b4794a@grouper.redistogo.com",
-                "port" : 9362
+                "host" : "localhost",
+                "port" : 6379
              }
 }

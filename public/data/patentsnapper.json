@@ -1,28 +1,67 @@
 {
   "endpoints": [
   {
-      "path": "/patents/1337",
-      "name": "Patents",
+      "path": "/assignees",
+      "name": "Assignees",
       "methods": [
           {
-              "MethodName": "Default",
+              "MethodName": "Search",
               "parameters": [
                   {
-                      "Default": "json",
-                      "Required": "Y",
+                      "Required": "N",
                       "Type": "string",
-                      "Name": "format",
+                      "Name": "patent",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "asgtype",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "assignee",
+                      "Description": "output format"
+                  },
+                  {
+                      "Required": "N",
+                      "Type": "string",
+                      "Name": "city",
                       "Description": "output format"
                   }
               ],
-              "RequiresOAuth": "Y",
-              "URI": "/companies/1337",
+              "RequiresOAuth": "N",
+              "URI": "/assignees",
               "HTTPMethod": "GET",
               "Synopsis": "Get the default representation for companies"
           }
       ]
     },
     {
+        "path": "/invpats/1337",
+        "name": "Invpats",
+        "methods": [
+            {
+                "MethodName": "Default",
+                "parameters": [
+                    {
+                        "Default": "json",
+                        "Required": "Y",
+                        "Type": "string",
+                        "Name": "format",
+                        "Description": "output format"
+                    }
+                ],
+                "RequiresOAuth": "Y",
+                "URI": "/companies/1337",
+                "HTTPMethod": "GET",
+                "Synopsis": "Get the default representation for companies"
+            }
+        ]
+      },
+      {
         "path": "/inventors/1337",
         "name": "Inventors",
         "methods": [
@@ -43,32 +82,10 @@
                 "Synopsis": "Get the default representation for companies"
             }
         ]
-      },
+      },  
       {
-        "path": "/patents/1337",
-        "name": "Lawyers",
-        "methods": [
-            {
-                "MethodName": "Default",
-                "parameters": [
-                    {
-                        "Default": "json",
-                        "Required": "Y",
-                        "Type": "string",
-                        "Name": "format",
-                        "Description": "output format"
-                    }
-                ],
-                "RequiresOAuth": "Y",
-                "URI": "/companies/1337",
-                "HTTPMethod": "GET",
-                "Synopsis": "Get the default representation for companies"
-            }
-        ]
-      },
-      {
-        "path": "/patents/1337",
-        "name": "Patent Classes",
+        "path": "/citations/1337",
+        "name": "Citations",
         "methods": [
             {
                 "MethodName": "Default",
@@ -90,7 +107,7 @@
       },     
       {
         "path": "/patents/1337",
-        "name": "Assignee",
+        "name": "Patents",
         "methods": [
             {
                 "MethodName": "Default",
@@ -109,7 +126,30 @@
                 "Synopsis": "Get the default representation for companies"
             }
         ]
-      } 
+      },
+      {
+          "path": "/patent_descs/1337",
+          "name": "Patent Descriptions",
+          "methods": [
+              {
+                  "MethodName": "Default",
+                  "parameters": [
+                      {
+                          "Default": "json",
+                          "Required": "Y",
+                          "Type": "string",
+                          "Name": "format",
+                          "Description": "output format"
+                      }
+                  ],
+                  "RequiresOAuth": "N",
+                  "URI": "/companies/1337",
+                  "HTTPMethod": "GET",
+                  "Synopsis": "Get the default representation for companies"
+              }
+          ]
+        }
+        
   ]
 }
 
