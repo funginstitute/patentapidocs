@@ -2,7 +2,7 @@
     "patentsnapper": {
         "name": "PatentSnapper",
         "protocol": "http",
-        "baseURL": "localhost:3000",
+        "baseURL": "patentsnapper.com",
         "publicPath": "/api",
         "headers" : {},
         "auth": "key",
