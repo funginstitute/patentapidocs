@@ -1,6 +1,6 @@
 {
-    "patentsnapper": {
-        "name": "PatentSnapper",
+    "patentapidoc": {
+        "name": "Patent View API Doc",
         "protocol": "http",
         "baseURL": "patentsnapper.com",
         "publicPath": "/api",

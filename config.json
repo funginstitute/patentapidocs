@@ -1,5 +1,5 @@
 {
-    "title" : "PatentSnapper USPTO API",
+    "title" : "Patent View USPTO API Documentation",
     "address": "0.0.0.0",
     "port" : 8080,
     "debug" : false,

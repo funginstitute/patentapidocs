@@ -1,1 +1,1 @@
-API Docs for PatentSnapper 
+Patent View API Documentation
