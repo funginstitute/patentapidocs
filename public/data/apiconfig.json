@@ -2,7 +2,7 @@
     "patentapidoc": {
         "name": "Patent View API Doc",
         "protocol": "http",
-        "baseURL": "patentsnapper.com",
+        "baseURL": "patentapidoc.herokuapp.com",
         "publicPath": "/api",
         "headers" : {},
         "auth": "key",
